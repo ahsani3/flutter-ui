@@ -54,40 +54,50 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: [
           Container(
-            padding: const EdgeInsets.all(10),
-            height: 300,
-            width: double.infinity,
-            margin: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
-                boxShadow: [
-                  BoxShadow(
-                      color: Colors.black.withOpacity(0.2),
-                      blurRadius: 15,
-                      offset: Offset.zero)
-                ]),
-            child: const Text(
-              "Discover the most modern furniture",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 22,
-                  fontWeight: FontWeight.w500,
-                  letterSpacing: 1),
-            ),
-            // Column(
-            //   mainAxisAlignment: MainAxisAlignment.center,
-            //   children: <Widget>[
-            //     const Text(
-            //       'You have pushed the button this many times:',
-            //     ),
-            //     Text(
-            //       '$_counter',
-            //       style: Theme.of(context).textTheme.headlineMedium,
-            //     ),
-            //   ],
-            // ),
-          ),
+              padding: const EdgeInsets.all(10),
+              height: 300,
+              width: double.infinity,
+              margin: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.black.withOpacity(0.2),
+                        blurRadius: 15,
+                        offset: Offset.zero)
+                  ]),
+              child: const Row(
+                children: [
+                  const Text(
+                    "Discover the most modern furniture",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 22,
+                        fontWeight: FontWeight.w500,
+                        letterSpacing: 1),
+                  ),
+                  Icon(
+                    Icons.favorite,
+                    color: Colors.red,
+                    size: 36,
+                  )
+                ],
+              )
+
+              // Column(
+              //   mainAxisAlignment: MainAxisAlignment.center,
+              //   children: <Widget>[
+              //     const Text(
+              //       'You have pushed the button this many times:',
+              //     ),
+              //     Text(
+              //       '$_counter',
+              //       style: Theme.of(context).textTheme.headlineMedium,
+              //     ),
+              //   ],
+              // ),
+              ),
           ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(

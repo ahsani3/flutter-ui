@@ -51,44 +51,60 @@ class _MyHomePageState extends State<MyHomePage> {
           IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert)),
         ],
       ),
-      body: Container(
-        padding: const EdgeInsets.all(10),
-        height: 300,
-        width: double.infinity,
-        margin: const EdgeInsets.all(10),
-        decoration: BoxDecoration(
-            color: Colors.grey,
-            borderRadius: BorderRadius.circular(20),
-            boxShadow: [
-              BoxShadow(
-                  color: Colors.black.withOpacity(0.2),
-                  blurRadius: 15,
-                  offset: Offset.zero)
-            ]),
-        child: const Column(
-          children: [
-            Text(
+      body: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(10),
+            height: 300,
+            width: double.infinity,
+            margin: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.black.withOpacity(0.2),
+                      blurRadius: 15,
+                      offset: Offset.zero)
+                ]),
+            child: const Text(
               "Discover the most modern furniture",
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 22,
                   fontWeight: FontWeight.w500,
                   letterSpacing: 1),
-            )
-          ],
-        ),
-        // Column(
-        //   mainAxisAlignment: MainAxisAlignment.center,
-        //   children: <Widget>[
-        //     const Text(
-        //       'You have pushed the button this many times:',
-        //     ),
-        //     Text(
-        //       '$_counter',
-        //       style: Theme.of(context).textTheme.headlineMedium,
-        //     ),
-        //   ],
-        // ),
+            ),
+            // Column(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: <Widget>[
+            //     const Text(
+            //       'You have pushed the button this many times:',
+            //     ),
+            //     Text(
+            //       '$_counter',
+            //       style: Theme.of(context).textTheme.headlineMedium,
+            //     ),
+            //   ],
+            // ),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20)),
+                shadowColor: Colors.grey[20],
+                elevation: 5.0),
+            child: Text(
+              "Add to cart".toUpperCase(),
+              style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white),
+            ),
+          ),
+        ],
       ),
 
       // floatingActionButton: FloatingActionButton(

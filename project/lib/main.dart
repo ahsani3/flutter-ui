@@ -52,6 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: Container(
+        padding: const EdgeInsets.all(10),
         height: 300,
         width: double.infinity,
         margin: const EdgeInsets.all(10),
@@ -64,6 +65,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   blurRadius: 15,
                   offset: Offset.zero)
             ]),
+        child: const Column(
+          children: [
+            Text(
+              "Discover the most modern furniture",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 22,
+                  fontWeight: FontWeight.w500,
+                  letterSpacing: 1),
+            )
+          ],
+        ),
         // Column(
         //   mainAxisAlignment: MainAxisAlignment.center,
         //   children: <Widget>[

@@ -67,20 +67,34 @@ class _MyHomePageState extends State<MyHomePage> {
                         blurRadius: 15,
                         offset: Offset.zero)
                   ]),
-              child: const Row(
+              child: Column(
                 children: [
-                  const Text(
-                    "Discover the most modern furniture",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 22,
-                        fontWeight: FontWeight.w500,
-                        letterSpacing: 1),
+                  SizedBox(
+                    width: 180,
+                    child: ClipRRect(
+                      borderRadius: const BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                      ),
+                      child: Image.asset('assets/images/furniture/img1.jpeg'),
+                    ),
                   ),
-                  Icon(
-                    Icons.favorite,
-                    color: Colors.red,
-                    size: 36,
+                  const Row(
+                    children: [
+                      const Text(
+                        "Discover the most modern furniture",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 22,
+                            fontWeight: FontWeight.w500,
+                            letterSpacing: 1),
+                      ),
+                      Icon(
+                        Icons.favorite,
+                        color: Colors.red,
+                        size: 36,
+                      )
+                    ],
                   )
                 ],
               )

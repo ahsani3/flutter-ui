@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:project/features/home/widgets/category_home.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -51,6 +52,13 @@ class HomePage extends StatelessWidget {
                   color: Color(0xFF4A4543),
                 )),
               ),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            const SizedBox(
+              height: 40,
+              child: CategoryHome(),
             )
           ],
         ),

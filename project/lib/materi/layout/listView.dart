@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+// ListView.builder()
+// │───itemCount
+// │───itemBuilder
+// |   |───context
+// |   |───index
+
 class MyListView extends StatelessWidget {
   MyListView({super.key});
 

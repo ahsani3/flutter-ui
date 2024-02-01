@@ -52,7 +52,5 @@ class _MyContainerState extends State<MyContainer> {
         ),
       ),
     );
-
-    ;
   }
 }

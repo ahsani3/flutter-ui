@@ -15,6 +15,7 @@ import 'package:project/materi/layout/gridView.dart';
 import 'package:project/materi/layout/listView.dart';
 import 'package:project/materi/layout/listViewBuilder.dart';
 import 'package:project/materi/layout/row.dart';
+import 'package:project/materi/layout/sizedBox.dart';
 import 'package:project/materi/layout/stack.dart';
 // import 'latihan.dart';
 
@@ -51,7 +52,8 @@ class MyApp extends StatelessWidget {
           // const MyStack(),
           // const MyAspectRatio(),
           // const MyCenter(),
-          const MyExpanded(),
+          // const MyExpanded(),
+          const MySizedBox(),
       // const MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );

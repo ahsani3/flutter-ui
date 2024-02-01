@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project/features/home/widgets/category_home.dart';
+import 'package:project/features/home/widgets/recommended_furniture_home.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -16,41 +17,38 @@ class HomePage extends StatelessWidget {
           icon: SvgPicture.asset('assets/icons/menu.svg'),
         ),
         title: Center(
-          child: Text(
-            'Home',
-            style: GoogleFonts.poppins(
-              textStyle: const TextStyle(
+            child: Text(
+          "Home",
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
                 fontWeight: FontWeight.w600,
                 fontSize: 16,
-                color: Color(0xff4A4543),
-              ),
-            ),
+                color: Color(0xff4A4543)),
           ),
-        ),
+        )),
         actions: [
           IconButton(
             onPressed: () {},
             icon: SvgPicture.asset('assets/icons/search.svg'),
-          )
+          ),
         ],
       ),
+      backgroundColor: const Color(0xFFF2F2F2),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 14),
+        padding: const EdgeInsets.symmetric(horizontal: 14.0),
         child: Column(
           children: [
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             SizedBox(
               width: 226,
               child: Text(
                 'Discover the most modern furniture',
                 style: GoogleFonts.poppins(
-                    textStyle: const TextStyle(
-                  fontWeight: FontWeight.w500,
-                  fontSize: 22,
-                  color: Color(0xFF4A4543),
-                )),
+                  textStyle: const TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 22,
+                      color: Color(0xFF4A4543)),
+                ),
               ),
             ),
             const SizedBox(
@@ -59,6 +57,19 @@ class HomePage extends StatelessWidget {
             const SizedBox(
               height: 40,
               child: CategoryHome(),
+            ),
+            Text(
+              'Recommended Furnitures',
+              style: GoogleFonts.poppins(
+                  textStyle: const TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 16,
+                color: Color(0xFF4A4543),
+              )),
+            ),
+            SizedBox(
+              height: 200,
+              child: RecommendedFurnituresHome(),
             )
           ],
         ),

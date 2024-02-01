@@ -54,10 +54,14 @@ class _PageTwoState extends State<PageTwo> {
       appBar: AppBar(
         title: Text('Coding Flutter - Navigator Push'),
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(10.0),
-        child: Text('Page Two'),
-      ),
+      body: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: const Text('Go Back'),
+          )),
     );
   }
 }

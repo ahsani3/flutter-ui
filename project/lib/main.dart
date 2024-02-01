@@ -12,6 +12,7 @@ import 'package:project/materi/layout/gridView.dart';
 import 'package:project/materi/layout/listView.dart';
 import 'package:project/materi/layout/listViewBuilder.dart';
 import 'package:project/materi/layout/row.dart';
+import 'package:project/materi/layout/stack.dart';
 // import 'latihan.dart';
 
 void main() {
@@ -43,7 +44,8 @@ class MyApp extends StatelessWidget {
           // const MyRow(),
           // MyListView(),
           // MyListViewBuilder(),
-          const MyGridView(),
+          // const MyGridView(),
+          const MyStack(),
       // const MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );

@@ -5,6 +5,7 @@ import 'package:project/materi/form/datePicker.dart';
 import 'package:project/materi/form/dialog.dart';
 import 'package:project/materi/form/dropdown.dart';
 import 'package:project/materi/form/radio.dart';
+import 'package:project/materi/form/snackbar.dart';
 import 'package:project/materi/form/switch.dart';
 import 'package:project/materi/form/textField.dart';
 
@@ -55,6 +56,10 @@ class _MyFormState extends State<MyForm> {
                 height: 20,
               ),
               MyBottomSheet(),
+              SizedBox(
+                height: 20,
+              ),
+              MySnackbar(),
               SizedBox(
                 height: 20,
               ),

@@ -7,6 +7,8 @@ import 'package:project/materi/basic/image.dart';
 import 'package:project/materi/basic/scafold.dart';
 import 'package:project/materi/basic/container.dart';
 import 'package:project/materi/basic/text.dart';
+import 'package:project/materi/form/dropdown.dart';
+import 'package:project/materi/form/form.dart';
 import 'package:project/materi/form/textField.dart';
 import 'package:project/materi/layout/aspectRatio.dart';
 import 'package:project/materi/layout/center.dart';
@@ -58,7 +60,7 @@ class MyApp extends StatelessWidget {
           // const MySizedBox(),
           // MyWrap(),
 
-          MyTextField(),
+          const MyForm(),
       // const MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );

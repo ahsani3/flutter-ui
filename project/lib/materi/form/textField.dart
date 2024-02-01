@@ -63,23 +63,18 @@ class _MyTextFieldState extends State<MyTextField> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Coding Flutter - Text Field'),
-      ),
-      body: TextField(
-        maxLength: 20,
-        controller: textController,
-        decoration: const InputDecoration(
-          labelText: "Nama",
-          labelStyle: TextStyle(color: Colors.blueGrey),
-          enabledBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: Colors.blueGrey),
-          ),
-          helperText: "Masukkan nama",
+    return TextField(
+      maxLength: 20,
+      controller: textController,
+      decoration: const InputDecoration(
+        labelText: "Nama",
+        labelStyle: TextStyle(color: Colors.blueGrey),
+        enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.blueGrey),
         ),
-        onChanged: (value) {},
+        helperText: "Masukkan nama",
       ),
+      onChanged: (value) {},
     );
   }
 }

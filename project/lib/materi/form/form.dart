@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project/materi/form/checkbox.dart';
+import 'package:project/materi/form/datePicker.dart';
 import 'package:project/materi/form/dropdown.dart';
 import 'package:project/materi/form/radio.dart';
 import 'package:project/materi/form/switch.dart';
@@ -40,6 +41,10 @@ class _MyFormState extends State<MyForm> {
                 height: 20,
               ),
               MyCheckbox(),
+              SizedBox(
+                height: 20,
+              ),
+              MyDatePicker(),
               SizedBox(
                 height: 20,
               ),

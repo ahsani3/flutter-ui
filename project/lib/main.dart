@@ -10,6 +10,7 @@ import 'package:project/materi/basic/text.dart';
 import 'package:project/materi/layout/aspectRatio.dart';
 import 'package:project/materi/layout/center.dart';
 import 'package:project/materi/layout/column.dart';
+import 'package:project/materi/layout/expanded.dart';
 import 'package:project/materi/layout/gridView.dart';
 import 'package:project/materi/layout/listView.dart';
 import 'package:project/materi/layout/listViewBuilder.dart';
@@ -49,7 +50,8 @@ class MyApp extends StatelessWidget {
           // const MyGridView(),
           // const MyStack(),
           // const MyAspectRatio(),
-          const MyCenter(),
+          // const MyCenter(),
+          const MyExpanded(),
       // const MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );

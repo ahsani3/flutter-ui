@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project/materi/form/bottomSheet.dart';
 import 'package:project/materi/form/checkbox.dart';
 import 'package:project/materi/form/datePicker.dart';
 import 'package:project/materi/form/dialog.dart';
@@ -50,6 +51,10 @@ class _MyFormState extends State<MyForm> {
                 height: 20,
               ),
               MyDialog(),
+              SizedBox(
+                height: 20,
+              ),
+              MyBottomSheet(),
               SizedBox(
                 height: 20,
               ),

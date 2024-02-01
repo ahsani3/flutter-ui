@@ -8,6 +8,7 @@ import 'package:project/materi/basic/scafold.dart';
 import 'package:project/materi/basic/container.dart';
 import 'package:project/materi/basic/text.dart';
 import 'package:project/materi/layout/column.dart';
+import 'package:project/materi/layout/row.dart';
 // import 'latihan.dart';
 
 void main() {
@@ -35,7 +36,8 @@ class MyApp extends StatelessWidget {
           // const MyImage(),
           // const MyCircleAvatar(),
 
-          const MyColumn(),
+          // const MyColumn(),
+          const MyRow(),
       // const MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );

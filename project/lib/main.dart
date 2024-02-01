@@ -21,6 +21,7 @@ import 'package:project/materi/layout/row.dart';
 import 'package:project/materi/layout/sizedBox.dart';
 import 'package:project/materi/layout/stack.dart';
 import 'package:project/materi/layout/wrap.dart';
+import 'package:project/materi/navigator/push.dart';
 // import 'latihan.dart';
 
 void main() {
@@ -60,7 +61,9 @@ class MyApp extends StatelessWidget {
           // const MySizedBox(),
           // MyWrap(),
 
-          const MyForm(),
+          // const MyForm(),
+
+          const MyPush(),
       // const MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );

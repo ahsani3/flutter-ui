@@ -23,6 +23,7 @@ import 'package:project/materi/layout/stack.dart';
 import 'package:project/materi/layout/wrap.dart';
 import 'package:project/materi/navigator/bottomNavigationBar.dart';
 import 'package:project/materi/navigator/push.dart';
+import 'package:project/materi/navigator/tabBar.dart';
 // import 'latihan.dart';
 
 void main() {
@@ -65,7 +66,8 @@ class MyApp extends StatelessWidget {
           // const MyForm(),
 
           // const MyPush(),
-          const MyBottomNavbar(),
+          // const MyBottomNavbar(),
+          const MyTabBar(),
       // const MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );

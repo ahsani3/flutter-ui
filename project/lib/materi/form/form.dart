@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project/materi/form/dropdown.dart';
+import 'package:project/materi/form/switch.dart';
 import 'package:project/materi/form/textField.dart';
 
 class MyForm extends StatefulWidget {
@@ -16,18 +17,24 @@ class _MyFormState extends State<MyForm> {
       appBar: AppBar(
         title: Text('Coding Flutter - Form'),
       ),
-      body: Column(
-        children: [
-          const MyTextField(),
-          SizedBox(
-            height: 20,
-          ),
-          MyDropDown(),
-          SizedBox(
-            height: 20,
-          ),
-        ],
-      ),
+      body: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            children: [
+              const MyTextField(),
+              SizedBox(
+                height: 20,
+              ),
+              MyDropDown(),
+              SizedBox(
+                height: 20,
+              ),
+              MySwitch(),
+              SizedBox(
+                height: 20,
+              ),
+            ],
+          )),
     );
   }
 }

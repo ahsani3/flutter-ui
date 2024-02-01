@@ -17,6 +17,7 @@ import 'package:project/materi/layout/listViewBuilder.dart';
 import 'package:project/materi/layout/row.dart';
 import 'package:project/materi/layout/sizedBox.dart';
 import 'package:project/materi/layout/stack.dart';
+import 'package:project/materi/layout/wrap.dart';
 // import 'latihan.dart';
 
 void main() {
@@ -53,7 +54,8 @@ class MyApp extends StatelessWidget {
           // const MyAspectRatio(),
           // const MyCenter(),
           // const MyExpanded(),
-          const MySizedBox(),
+          // const MySizedBox(),
+          MyWrap(),
       // const MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );

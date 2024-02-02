@@ -21,6 +21,7 @@ import 'package:project/materi/layout/row.dart';
 import 'package:project/materi/layout/sizedBox.dart';
 import 'package:project/materi/layout/stack.dart';
 import 'package:project/materi/layout/wrap.dart';
+import 'package:project/materi/navigator/SilverAppBar.dart';
 import 'package:project/materi/navigator/bottomNavigationBar.dart';
 import 'package:project/materi/navigator/drawer.dart';
 import 'package:project/materi/navigator/push.dart';
@@ -69,7 +70,8 @@ class MyApp extends StatelessWidget {
           // const MyPush(),
           // const MyBottomNavbar(),
           // const MyTabBar(),
-          const MyDrawer(),
+          // const MyDrawer(),
+          const MySilverAppBar(),
       // const MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:project/features/home/widgets/bottom_navigation_bar_home.dart';
 import 'package:project/features/home/widgets/category_home.dart';
 import 'package:project/features/home/widgets/recommended_furniture_home.dart';
 
@@ -37,6 +38,7 @@ class HomePage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 14.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 20),
             SizedBox(
@@ -68,12 +70,13 @@ class HomePage extends StatelessWidget {
               )),
             ),
             SizedBox(
-              height: 200,
+              height: MediaQuery.of(context).size.height - 309,
               child: RecommendedFurnituresHome(),
             )
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavbarHome(),
     );
   }
 }

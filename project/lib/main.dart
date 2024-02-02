@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project/features/detail/pages/detail_page.dart';
 import 'package:project/features/home/pages/home_page.dart';
 import 'package:project/materi/basic/button.dart';
 import 'package:project/materi/basic/circleAvatar.dart';
@@ -40,11 +41,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home:
-          // const HomePage(),
+
+          // -- Basic --
           // const MyScafold(title: 'Flutter Demo Home Page'),
           // const MyContainer(),
           // const MyText(),
@@ -53,6 +55,7 @@ class MyApp extends StatelessWidget {
           // const MyImage(),
           // const MyCircleAvatar(),
 
+          // -- Layout --
           // const MyColumn(),
           // const MyRow(),
           // MyListView(),
@@ -65,13 +68,19 @@ class MyApp extends StatelessWidget {
           // const MySizedBox(),
           // MyWrap(),
 
+          // -- Form --
           // const MyForm(),
 
+          // -- Navigator --
           // const MyPush(),
           // const MyBottomNavbar(),
           // const MyTabBar(),
           // const MyDrawer(),
-          const MySilverAppBar(),
+          // const MySilverAppBar(),
+
+          // -- Slicing Figma --
+          // const HomePage(),
+          const DetailPage(),
       // const MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );

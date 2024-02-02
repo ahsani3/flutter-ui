@@ -76,7 +76,7 @@ class RecommendedFurnituresHome extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: SvgPicture.asset(
-                          'assets/icons/love.svg',
+                          'assets/icons/favorite.svg',
                           width: 15,
                         ),
                       ),

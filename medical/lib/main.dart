@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medical/home_page.dart';
 
-void mian() {
+void main() {
   runApp(const MyApp());
 }
 
@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Medical',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
       ),

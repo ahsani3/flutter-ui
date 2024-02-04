@@ -64,23 +64,23 @@ class MyApp extends StatelessWidget {
           // const MyStack(),
           // const MyAspectRatio(),
           // const MyCenter(),
-          // const MyExpanded(),
-          // const MySizedBox(),
-          // MyWrap(),
+          const MyExpanded(),
+      // const MySizedBox(),
+      // MyWrap(),
 
-          // -- Form --
-          // const MyForm(),
+      // -- Form --
+      // const MyForm(),
 
-          // -- Navigator --
-          // const MyPush(),
-          // const MyBottomNavbar(),
-          // const MyTabBar(),
-          // const MyDrawer(),
-          // const MySilverAppBar(),
+      // -- Navigator --
+      // const MyPush(),
+      // const MyBottomNavbar(),
+      // const MyTabBar(),
+      // const MyDrawer(),
+      // const MySilverAppBar(),
 
-          // -- Slicing Figma --
-          // const HomePage(),
-          const DetailPage(),
+      // -- Slicing Figma --
+      // const HomePage(),
+      // const DetailPage(),
       // const MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );

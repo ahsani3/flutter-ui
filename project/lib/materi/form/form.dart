@@ -23,48 +23,56 @@ class _MyFormState extends State<MyForm> {
       appBar: AppBar(
         title: Text('Coding Flutter - Form'),
       ),
-      body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16),
-          child: Column(
-            children: [
-              const MyTextField(),
-              SizedBox(
-                height: 20,
-              ),
-              MyDropDown(),
-              SizedBox(
-                height: 20,
-              ),
-              MySwitch(),
-              SizedBox(
-                height: 20,
-              ),
-              MyRadio(),
-              SizedBox(
-                height: 20,
-              ),
-              MyCheckbox(),
-              SizedBox(
-                height: 20,
-              ),
-              MyDatePicker(),
-              SizedBox(
-                height: 20,
-              ),
-              MyDialog(),
-              SizedBox(
-                height: 20,
-              ),
-              MyBottomSheet(),
-              SizedBox(
-                height: 20,
-              ),
-              MySnackbar(),
-              SizedBox(
-                height: 20,
-              ),
-            ],
-          )),
+      body: SizedBox(
+        height: MediaQuery.of(context).size.height,
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          children: [
+            Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  children: [
+                    const MyTextField(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    MyDropDown(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    MySwitch(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    MyRadio(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    MyCheckbox(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    MyDatePicker(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    MyDialog(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    MyBottomSheet(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    MySnackbar(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                  ],
+                )),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
       ),
       home:
           // const HomePage(),
-          // const DetailDoctorPage(),
-          const TopDoctorPage(),
+          const DetailDoctorPage(),
+      // const TopDoctorPage(),
     );
   }
 }

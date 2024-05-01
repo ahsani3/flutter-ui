@@ -17,52 +17,52 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // appBar: AppBar(
-        //   backgroundColor: Color(0xFFB28CFF),
-        //   leading: IconButton(
-        //       onPressed: () {},
-        //       icon: SvgPicture.asset('assets/hicon/bold/Menu.svg')),
-        //   actions: [
-        //     Padding(
-        //       padding: const EdgeInsets.all(8.0),
-        //       child: ClipRRect(
-        //         borderRadius: const BorderRadius.all(Radius.circular(15)),
-        //         child: Image.asset(
-        //           'assets/images/profile.png',
-        //           height: 56,
-        //           width: 56,
-        //         ),
-        //       ),
-        //     ),
-        //   ],
-        // ),
+        appBar: AppBar(
+          backgroundColor: Color(0xFFB28CFF),
+          leading: IconButton(
+              onPressed: () {},
+              icon: SvgPicture.asset('assets/hicon/bold/Menu.svg')),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ClipRRect(
+                borderRadius: const BorderRadius.all(Radius.circular(15)),
+                child: Image.asset(
+                  'assets/images/profile.png',
+                  height: 56,
+                  width: 56,
+                ),
+              ),
+            ),
+          ],
+        ),
         backgroundColor: Color(0xFFFFFFFF),
         body: Stack(
           clipBehavior: Clip.none,
           children: [
             Column(
               children: [
-                Container(
-                  padding: EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: Color(0xFFB28CFF),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      SvgPicture.asset('assets/hicon/bold/Menu.svg'),
-                      ClipRRect(
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(15)),
-                        child: Image.asset(
-                          'assets/images/profile.png',
-                          height: 56,
-                          width: 56,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                // Container(
+                //   padding: EdgeInsets.all(20),
+                //   decoration: BoxDecoration(
+                //     color: Color(0xFFB28CFF),
+                //   ),
+                //   child: Row(
+                //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //     children: [
+                //       SvgPicture.asset('assets/hicon/bold/Menu.svg'),
+                //       ClipRRect(
+                //         borderRadius:
+                //             const BorderRadius.all(Radius.circular(15)),
+                //         child: Image.asset(
+                //           'assets/images/profile.png',
+                //           height: 56,
+                //           width: 56,
+                //         ),
+                //       ),
+                //     ],
+                //   ),
+                // ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height - 96,
                   child: ListView(

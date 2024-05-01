@@ -18,9 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home:
-          // const HomePage(),
-          const DetailDoctorPage(),
+      home: const HomePage(),
+      // const DetailDoctorPage(),
       // const TopDoctorPage(),
     );
   }

@@ -14,41 +14,63 @@ class _TopDoctorPageState extends State<TopDoctorPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color(0xFFFFFFFF),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: SvgPicture.asset(
+              'assets/hicon/bold/Left.svg',
+              colorFilter: ColorFilter.mode(Color(0xFF263257), BlendMode.srcIn),
+            ),
+          ),
+          title: Text(
+            'Top Doctor',
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                  color: Color(0xFF263257),
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500),
+            ),
+          ),
+          centerTitle: true,
+        ),
         backgroundColor: Colors.white,
         body: Stack(
           clipBehavior: Clip.none,
           children: [
             Column(
               children: [
-                Container(
-                  padding: EdgeInsets.symmetric(vertical: 16, horizontal: 20),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Container(
-                          alignment: Alignment.topLeft,
-                          child: SvgPicture.asset(
-                            'assets/hicon/bold/Left.svg',
-                            colorFilter: ColorFilter.mode(
-                                Color(0xFF263257), BlendMode.srcIn),
-                          ),
-                        ),
-                      ),
-                      Text(
-                        'Top Doctor',
-                        style: GoogleFonts.poppins(
-                          textStyle: TextStyle(
-                              color: Color(0xFF263257),
-                              fontSize: 18,
-                              fontWeight: FontWeight.w500),
-                        ),
-                      ),
-                      Expanded(child: SizedBox())
-                    ],
-                  ),
-                ),
+                // Container(
+                //   padding: EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+                //   child: Row(
+                //     children: [
+                //       Expanded(
+                //         child: Container(
+                //           alignment: Alignment.topLeft,
+                //           child: SvgPicture.asset(
+                //             'assets/hicon/bold/Left.svg',
+                //             colorFilter: ColorFilter.mode(
+                //                 Color(0xFF263257), BlendMode.srcIn),
+                //           ),
+                //         ),
+                //       ),
+                //       Text(
+                //         'Top Doctor',
+                //         style: GoogleFonts.poppins(
+                //           textStyle: TextStyle(
+                //               color: Color(0xFF263257),
+                //               fontSize: 18,
+                //               fontWeight: FontWeight.w500),
+                //         ),
+                //       ),
+                //       Expanded(child: SizedBox())
+                //     ],
+                //   ),
+                // ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height - 58,
+                  height: MediaQuery.of(context).size.height - 96,
                   child: ListView(
                     scrollDirection: Axis.vertical,
                     children: [
